@@ -1,0 +1,10 @@
+#N canvas 1146 270 376 205 10;
+#X obj 45 67 loadbang;
+#X obj 48 150 outlet;
+#X obj 71 98 r /wg/init;
+#X text 10 25 abstraction to init \, reinit waveguides;
+#X text 44 171 (c) GPL \, acre winfried ritsch;
+#X text 12 42 used in library and can be used for own instruments;
+#X text 17 5 wg/init/bang;
+#X connect 0 0 1 0;
+#X connect 2 0 1 0;

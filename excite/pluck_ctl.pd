@@ -1,0 +1,34 @@
+#N canvas 441 159 450 300 10;
+#X obj 101 101 cnv 15 98 98 empty empty pluck_\$1 2 7 0 8 -262130 -66577
+0;
+#X obj 107 176 nbx 3 14 -1e+37 1e+37 0 0 \$1/vol \$1/vol vol 0 -8 0
+10 -262144 -1 -1 93 256;
+#X obj 176 105 tgl 15 0 \$1/vis \$1/vis TAB 1 8 0 8 -257985 -1 -1 1
+1;
+#X obj 106 138 bng 15 250 50 0 \$1/default/read \$1/default/read read
+17 7 0 8 -257985 -1 -1;
+#X obj 144 136 bng 15 250 50 0 \$1/write \$1/write write 17 7 0 8 -257985
+-1 -1;
+#X obj 158 157 tgl 15 0 empty empty rep. 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 225 164 metro 1000;
+#X obj 158 177 bng 15 250 50 0 \$1/play \$1/play play 17 7 0 10 -262144
+-1 -1;
+#X obj 225 185 s \$1/play;
+#X text 103 209 (c) GPL \, acre winfried ritsch;
+#X text 114 56 wg/excite/pluck_ctl <id>;
+#X obj 18 112 openpanel;
+#X obj 210 107 savepanel;
+#X obj 106 119 bng 15 250 50 0 empty empty open 17 7 0 8 -257985 -1
+-1;
+#X obj 144 119 bng 15 250 50 0 empty empty save 17 7 0 8 -257985 -1
+-1;
+#X obj 209 135 s \$1/write;
+#X obj 18 137 s \$1/read;
+#X connect 5 0 6 0;
+#X connect 6 0 8 0;
+#X connect 11 0 16 0;
+#X connect 12 0 15 0;
+#X connect 13 0 11 0;
+#X connect 14 0 12 0;
+#X coords 0 -1 1 1 100 100 2 100 100;

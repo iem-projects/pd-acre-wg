@@ -1,0 +1,19 @@
+#N canvas 515 354 599 300 10;
+#X obj 58 213 line~;
+#X obj 58 192 pack 0 5;
+#X obj 58 172 dbtorms;
+#X obj 50 241 outlet~;
+#X obj 48 91 inlet~;
+#X text 54 39 strength of blowing with pressure and noise;
+#X obj 58 152 r \$1/pressure;
+#X text 51 21 wg/blow/pressure~ <id>;
+#X text 112 242 (c) GPL algorythmics \, acre \, winfried ritsch;
+#X text 117 77 used this if you want a message for reed pressure;
+#X text 116 92 if you use a signal for pressure you dont need it but
+can use both if its in the signal path of the excitation of a reed
+;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 4 0 3 0;
+#X connect 6 0 2 0;

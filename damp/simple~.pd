@@ -1,0 +1,10 @@
+#N canvas 323 328 283 171 10;
+#X obj 28 29 inlet~;
+#X obj 27 113 outlet~;
+#X obj 27 61 wg/damp/decay~ \$1;
+#X obj 27 85 wg/damp/filt~ \$1;
+#X text 37 6 wg/damp/simple~ <id>;
+#X text 29 135 (c) GPL \, acre winfried ritsch;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;

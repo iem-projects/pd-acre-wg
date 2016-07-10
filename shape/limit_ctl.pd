@@ -1,0 +1,10 @@
+#N canvas 587 521 408 78 10;
+#X obj 11 11 cnv 15 98 48 empty empty shape_limit_\$2 1 6 0 8 -204800
+-66577 0;
+#X obj 70 27 nbx 3 12 0 1e+37 0 0 \$1/thresh \$1/thresh thresh(dB)
+-52 7 0 8 -262144 -1 -1 42 256;
+#X text 117 38 (c) GPL \, acre winfried ritsch;
+#X obj 71 44 nbx 3 12 0 1e+37 0 0 \$1/amp \$1/amp amp(dB) -36 7 0 8
+-262144 -1 -1 101 256;
+#X text 114 6 wg/shape/ctl <id> <label>;
+#X coords 0 -1 1 1 100 50 2 10 10;

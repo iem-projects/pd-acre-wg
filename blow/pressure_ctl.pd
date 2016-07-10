@@ -1,0 +1,8 @@
+#N canvas 407 608 329 226 10;
+#X obj 101 101 cnv 15 98 23 empty empty blow_\$2 2 8 0 8 -204786 -66577
+0;
+#X obj 145 111 nbx 5 12 0 100 0 0 \$1/pressure \$1/pressure pressure
+0 -6 0 10 -262144 -1 -1 0 256;
+#X text 8 136 (c) GPL algorythmics \, acre \, winfried ritsch;
+#X text 93 23 wg/blow/pressure_ctl <id> <label>;
+#X coords 0 -1 1 1 100 25 2 100 100;

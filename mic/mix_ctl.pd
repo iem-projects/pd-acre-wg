@@ -1,0 +1,8 @@
+#N canvas 646 265 342 77 10;
+#X obj 11 11 cnv 15 98 48 empty empty mic_\$1 2 7 0 8 -204800 -66577
+0;
+#X obj 20 37 nbx 7 14 0 1 0 0 \$1/position \$1/position pos 0 -8 0
+10 -262144 -1 -1 0 256;
+#X text 121 39 (c) GPL \, acre winfried ritsch;
+#X text 133 10 wg/mic/mix_ctl <id>;
+#X coords 0 -1 1 1 100 50 2 10 10;

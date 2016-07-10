@@ -1,0 +1,22 @@
+#N canvas 156 150 536 246 10;
+#X obj 15 34 r \$1;
+#X obj 14 93 r \$1/trigger;
+#X text 59 33 receive list and send individual values for GUI \, ds...
+;
+#X text 25 74 receive individual values and send as adsr list;
+#X obj 15 150 list;
+#X obj 15 187 outlet;
+#X obj 141 93 loadbang;
+#X text 77 158 normal values are set \, then with trigger the vgen~
+is fed;
+#X text 12 211 (c) GPL \, acre winfried ritsch;
+#X text 76 173 Use drive in combination with wg/adsr/vgen~;
+#X text 20 11 wg/adsr/drive <id> <vel> <dur> <attack> <decay> <sustain>
+<release>, f 68;
+#X obj 63 128 wg/adsr/pack \$1 \$2 \$3 \$4 \$5 \$6 \$7;
+#X obj 15 54 wg/adsr/unpack \$1 \$2 \$3 \$4 \$5 \$6 \$7;
+#X connect 0 0 12 0;
+#X connect 1 0 4 0;
+#X connect 4 0 5 0;
+#X connect 6 0 11 0;
+#X connect 11 0 4 1;

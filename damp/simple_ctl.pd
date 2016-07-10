@@ -1,0 +1,21 @@
+#N canvas 1080 91 443 187 10;
+#X obj 11 11 cnv 15 98 48 empty \$1/ctl/label damp_Y 1 6 0 8 -204800
+-66577 0;
+#X obj 39 23 nbx 5 12 0 100 0 0 \$1/damphigh \$1/damphigh high -24
+8 0 10 -262144 -1 -1 0 256;
+#X obj 39 35 nbx 5 12 0 100 0 0 \$1/damplow \$1/damplow low -24 8 0
+10 -262144 -1 -1 0 256;
+#X obj 39 47 nbx 7 12 0 100 0 0 \$1/decay \$1/decay decay -28 7 0 10
+-262144 -1 -1 0 256;
+#X text 3 160 (c) GPL \, acre winfried ritsch;
+#X obj 156 30 wg/init/bang;
+#X obj 155 54 acre/arg_default \$1 \$2;
+#X text 125 5 wg/damp/simple_ctl <id> [label];
+#X obj 155 118 s \$1/ctl/label;
+#X obj 155 76 symbol;
+#X msg 155 97 label damp_\$1;
+#X connect 5 0 6 0;
+#X connect 6 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 8 0;
+#X coords 0 -1 1 1 100 50 2 10 10;

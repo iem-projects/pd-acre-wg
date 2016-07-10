@@ -1,0 +1,5 @@
+#N canvas 899 480 450 300 10;
+#X text 29 35 wg/blow_ds <storage domain> <id>;
+#X obj 26 69 ds/register_map \$1 \$2/noise/vol;
+#X obj 28 96 ds/register_map \$1 \$2/noise/bp/freq;
+#X obj 29 123 ds/register_map \$1 \$2/noise/bp/Q;

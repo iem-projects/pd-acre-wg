@@ -1,0 +1,9 @@
+#N canvas 159 528 406 224 10;
+#X obj 30 44 ds/register_map \$1 \$2/note;
+#X obj 28 95 wg/damp/simple_ds \$1 \$2/damp;
+#X obj 31 64 ds/register_map \$1 \$2/pos;
+#X text 214 69 split position 0..1;
+#X obj 28 134 wg/mic/mix_ds \$1 \$2/mic;
+#X obj 28 114 wg/port/split3_ds \$1 \$2/split;
+#X text 27 15 wg/string/overtone_ds <storage domain> <id>;
+#X text 26 158 (c) GPL \, acre winfried ritsch;

@@ -1,0 +1,7 @@
+#N canvas 916 240 427 209 10;
+#X text 17 113 (c) GPL \, acre winfried ritsch;
+#X text 18 6 wg/adsr/ds <storage domain> <id>;
+#X obj 16 26 ds/register_map \$1 \$2/attack;
+#X obj 16 46 ds/register_map \$1 \$2/decay;
+#X obj 16 67 ds/register_map \$1 \$2/release;
+#X obj 16 87 ds/register_map \$1 \$2/sustain;

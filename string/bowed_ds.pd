@@ -1,0 +1,13 @@
+#N canvas 448 334 458 240 10;
+#X obj 30 44 ds/register_map \$1 \$2/note;
+#X obj 26 169 wg/damp/simple_ds \$1 \$2/damp;
+#X obj 31 64 ds/register_map \$1 \$2/pos;
+#X text 214 69 split position 0..1;
+#X text 27 9 wg/string/bowed_ds <storage domain> <id>;
+#X text 25 191 (c) GPL \, acre winfried ritsch;
+#X obj 25 137 wg/bow/table_ds \$1 \$2/bow;
+#X obj 25 99 ds/register_map \$1 \$2/bow/force;
+#X obj 25 118 ds/register_map \$1 \$2/bow/velocity;
+#X text 268 103 play paramter only stored for example;
+#X text 30 22 - bowed -;
+#X text 29 82 - bow~ -;

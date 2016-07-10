@@ -1,0 +1,4 @@
+#N canvas 717 486 272 139 10;
+#X obj 20 42 ds/register_map \$1 \$2/decay;
+#X text 15 71 (c) GPL \, acre winfried ritsch;
+#X text 20 15 wg/damp/decay_ds <domain> <id>;

@@ -1,0 +1,24 @@
+#N canvas 1185 823 399 224 10;
+#X obj 11 11 cnv 15 98 98 empty empty simple_\$1 2 8 0 8 -233017 -66577
+0;
+#X text 43 146 (c) GPL \, acre winfried ritsch;
+#X obj 10 60 wg/damp/simple_ctl \$1/damp;
+#X obj 81 14 tgl 15 0 \$1/on \$1/on on 17 7 0 10 -260097 -1 -1 1 1
+;
+#X obj 36 43 nbx 4 14 -1e+37 1e+37 0 0 \$1/note \$1/note note -24 8
+0 10 -262144 -1 -1 36 256;
+#X obj 14 27 tgl 15 0 \$1/closed \$1/closed closed 17 7 0 10 -262144
+-1 -1 1 1;
+#N canvas 12 229 278 159 \$0-extra 1;
+#X obj 61 40 nbx 7 14 -1e+37 1e+37 0 0 \$1/freq \$1/freq freq -28 8
+0 10 -228856 -1 -1 65.4064 256;
+#X obj 31 59 wg/wave/ctl \$1;
+#X text 50 7 Info;
+#X restore 14 120 pd \$0-extra;
+#X obj 92 37 tgl 15 0 empty empty I 4 7 0 10 -228856 -1 -1 1 1;
+#X obj 138 72 pack 0 \$0;
+#X msg 139 94 \; pd-\$2-extra vis \$1;
+#X text 143 10 wg/string/simple_ctl <ID>;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X coords 0 -1 1 1 100 100 2 10 10;

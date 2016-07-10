@@ -1,0 +1,5 @@
+#N canvas 713 412 337 138 10;
+#X obj 12 34 ds/register_map \$1 \$2/damphigh;
+#X obj 11 55 ds/register_map \$1 \$2/damplow;
+#X text 13 79 (c) GPL \, acre winfried ritsch;
+#X text 10 5 wg/damp/filt_ds <domain> <id>;

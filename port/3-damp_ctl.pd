@@ -1,0 +1,11 @@
+#N canvas 1087 621 329 226 10;
+#X obj 101 101 cnv 15 98 98 empty empty port_\$1 1 6 0 8 -204800 -66577
+0;
+#X obj 100 125 wg/port/3_ctl \$1;
+#X obj 100 150 wg/damp/simple_ctl \$1/damp;
+#X obj 170 105 tgl 15 0 \$1/on \$1/on on 17 7 0 10 -260097 -1 -1 1
+1;
+#X text 103 209 (c) GPL \, acre winfried ritsch;
+#X obj 103 229;
+#X text 106 55 wg/port/3-damp_ctl <id>;
+#X coords 0 -1 1 1 100 100 2 100 100;

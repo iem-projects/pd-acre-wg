@@ -1,0 +1,19 @@
+#N canvas 1032 474 399 233 10;
+#X obj 11 11 cnv 15 98 198 empty empty bowed_\$1 2 8 0 8 -233017 -66577
+0;
+#X obj 156 43 nbx 7 14 -1e+37 1e+37 0 0 \$1/freq \$1/freq freq -24
+8 0 10 -228856 -1 -1 138.591 256;
+#X obj 36 31 nbx 7 14 0 1 0 0 \$1/pos \$1/pos pos -20 8 0 10 -262144
+-1 -1 0.3 256;
+#X text 130 187 (c) GPL \, acre winfried ritsch;
+#X obj 10 160 wg/damp/simple_ctl \$1/damp;
+#X obj 81 14 tgl 15 0 \$1/on \$1/on on 17 7 0 10 -260097 -1 -1 1 1
+;
+#X obj 36 49 nbx 4 14 -1e+37 1e+37 0 0 \$1/note \$1/note note -24 8
+0 10 -262144 -1 -1 49 256;
+#X obj 10 110 wg/bow/table_ctl B/bow;
+#X text 14 72 No Bridge !;
+#X text 16 87 No body !;
+#X text 151 28 info;
+#X text 143 10 wg/string/bowed_ctl <id>;
+#X coords 0 -1 1 1 100 200 2 10 10;

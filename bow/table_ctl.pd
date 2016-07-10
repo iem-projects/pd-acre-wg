@@ -1,0 +1,33 @@
+#N canvas 493 78 523 251 10;
+#X obj 101 101 cnv 15 98 48 empty \$1/delay/max/label bow_\$1 2 7 0
+8 -228856 -66577 0;
+#X text 107 54 wg/bow/table_ctl <id>;
+#X obj 161 122 nbx 3 14 0 100 0 0 \$1/force \$1/force force -32 8 0
+10 -262144 -1 -1 100 256;
+#X obj 161 109 nbx 3 14 0 120 0 0 \$1/velocity \$1/velocity velocity
+-48 8 0 10 -262144 -1 -1 0 256;
+#N canvas 105 352 262 157 \$0-bow-extra 0;
+#X obj 80 40 nbx 4 14 -1e+37 1e+37 0 0 \$1/noise \$1/noise noise -48
+8 0 10 -262144 -1 -1 50 256;
+#X obj 79 57 nbx 4 14 -1e+37 1e+37 0 0 \$1/noise/lop \$1/noise/lop
+lop -48 8 0 10 -262144 -1 -1 70 256;
+#X obj 37 128 tgl 15 0 \$1/table/vis \$1/table/vis show_table 17 7
+0 10 -228856 -1 -1 0 1;
+#X obj 38 107 nbx 4 14 0 1 0 0 \$1/bowtable/width \$1/bowtable/width
+width 0 -8 0 10 -262144 -1 -1 0.5 256;
+#X obj 86 107 nbx 4 14 0 1e+21 0 0 \$1/bowtable/gradient \$1/bowtable/gradient
+gradient 0 -8 0 10 -262144 -1 -1 2 256;
+#X text 29 82 bowtable recalc;
+#X text 31 25 additional noise;
+#X text 129 41 mdB;
+#X text 128 57 mfreq;
+#X text 36 0 BOW;
+#X restore 214 174 pd \$0-bow-extra;
+#X obj 214 118 pack 0 \$0;
+#X msg 214 140 \; pd-\$2-bow-extra vis \$1;
+#X obj 102 134 tgl 15 0 empty empty extra 17 7 0 10 -262144 -1 -1 1
+1;
+#X text 92 197 (c) GPL \, acre winfried ritsch;
+#X connect 5 0 6 0;
+#X connect 7 0 5 0;
+#X coords 0 -1 1 1 100 50 2 100 100;

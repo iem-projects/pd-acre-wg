@@ -1,0 +1,8 @@
+#N canvas 1447 521 427 198 10;
+#X obj 18 24 ds/register_map \$1 \$2/adsr/vel;
+#X obj 17 43 ds/register_map \$1 \$2/adsr/dur;
+#X text 18 6 wg/adsr/ds <storage domain> <id>;
+#X obj 17 65 wg/adsr/adsr_ds /settings /clarinet/A;
+#X text 17 96 if also velocity and duration should be stored use this
+\, if not use "wg/adsr/adsr_ds";
+#X text 17 143 (c) GPL \, acre winfried ritsch;

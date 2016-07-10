@@ -1,0 +1,10 @@
+#N canvas 159 531 406 224 10;
+#X obj 30 44 ds/register_map \$1 \$2/note;
+#X text 26 158 for example limited string #X text 28 179 (c) GPL \,
+acre winfried ritsch;
+#X obj 31 64 ds/register_map \$1 \$2/pos;
+#X text 214 69 split position 0..1;
+#X obj 28 114 wg/shape/limit_ds \$1 \$2/shape;
+#X obj 28 95 wg/damp/simple_ds \$1 \$2/damp;
+#X obj 28 134 wg/mic/mix_ds \$1 \$2/mic;
+#X text 27 15 wg/string/limited_ds <storage domain> <id>;

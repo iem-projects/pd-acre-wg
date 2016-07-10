@@ -1,0 +1,8 @@
+#N canvas 393 196 406 224 10;
+#X obj 30 54 ds/register_map \$1 \$2/note;
+#X text 33 179 (c) GPL \, acre winfried ritsch;
+#X obj 30 126 wg/filt/pipebell_ds \$1 \$2/pipebell;
+#X obj 30 90 wg/damp/simple_ds \$1 \$2/damp;
+#X obj 30 71 ds/register_map \$1 \$2/detune;
+#X obj 30 107 wg/blow/noise_ds \$1 \$2/blow;
+#X text 28 15 wg/clarinet/ds <storage domain> <id>;

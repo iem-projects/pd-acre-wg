@@ -1,0 +1,35 @@
+#N canvas 684 164 504 275 10;
+#X obj 11 67 inlet;
+#X obj 13 221 outlet;
+#X text 67 65 vel in mididB \, times in ms;
+#X text 198 99 \$1/vel ... can be bang or vel;
+#X obj 19 149 s \$1/vel;
+#X obj 79 195 s \$1/attack;
+#X obj 112 176 s \$1/decay;
+#X obj 59 124 s \$1/dur;
+#X obj 178 135 s \$1/release;
+#X obj 61 221 outlet;
+#X obj 111 221 outlet;
+#X obj 161 221 outlet;
+#X obj 211 221 outlet;
+#X obj 145 156 s \$1/sustain;
+#X obj 262 221 outlet;
+#X text 9 243 (c) GPL \, acre winfried ritsch;
+#X text 14 21 wg/adsr/unpack <vel> <dur> <attack> <decay> <sustain>
+<release>, f 64;
+#X obj 13 99 unpack \$2 \$3 \$4 \$5 \$6 \$7;
+#X text 23 39 split list to individual parameter control (see GUI)
+;
+#X connect 0 0 17 0;
+#X connect 17 0 4 0;
+#X connect 17 0 1 0;
+#X connect 17 1 9 0;
+#X connect 17 1 7 0;
+#X connect 17 2 10 0;
+#X connect 17 2 5 0;
+#X connect 17 3 11 0;
+#X connect 17 3 6 0;
+#X connect 17 4 12 0;
+#X connect 17 4 13 0;
+#X connect 17 5 14 0;
+#X connect 17 5 8 0;

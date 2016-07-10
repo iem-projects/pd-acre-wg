@@ -1,0 +1,20 @@
+#N canvas 225 420 393 65 10;
+#X obj 11 11 cnv 15 98 48 empty empty ADSR_\$2 1 6 0 8 -228856 -66577
+0;
+#X obj 25 23 nbx 3 12 0 1e+37 0 0 \$1/vel \$1/vel vel -14 7 0 8 -262144
+-1 -1 96 256;
+#X obj 71 11 nbx 4 12 18 1e+37 0 0 \$1/attack \$1/attack A -7 7 0 8
+-262144 -1 -1 20 256;
+#X obj 71 23 nbx 4 12 18 1e+37 0 0 \$1/decay \$1/decay D -7 7 0 8 -262144
+-1 -1 30 256;
+#X obj 71 35 nbx 4 12 18 1e+37 0 0 \$1/release \$1/release Z -7 7 0
+8 -262144 -1 -1 250 256;
+#X obj 25 47 nbx 7 12 18 1e+37 0 0 \$1/dur \$1/dur dur -14 7 0 8 -262144
+-1 -1 1000 256;
+#X obj 96 47 bng 12 250 50 0 \$1/trigger \$1/trigger P 4 6 0 10 -204786
+-1 -1;
+#X obj 25 35 nbx 3 12 0 1e+37 0 0 \$1/sustain \$1/sustain S -7 7 0
+8 -262144 -1 -1 89 256;
+#X text 124 42 (c) GPL \, acre winfried ritsch;
+#X text 117 8 wg/adsr/ctl <id> <label>;
+#X coords 0 -1 1 1 100 50 2 10 10;

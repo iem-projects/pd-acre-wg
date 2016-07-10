@@ -1,0 +1,8 @@
+#N canvas 492 466 318 102 10;
+#X obj 11 11 cnv 15 48 48 empty empty wg 10 7 0 12 -204800 -66577 0
+;
+#X obj 20 26 bng 30 250 50 0 /wg/init /wg/init init 2 14 0 12 -4034
+-1 -1;
+#X text 11 62 send a bang to all initbang objects;
+#X text 84 6 (c) GPL \, acre winfried ritsch;
+#X coords 0 -1 1 1 50 50 2 10 10;

@@ -1,0 +1,26 @@
+#N canvas 456 237 648 306 10;
+#X obj 101 101 cnv 15 98 48 empty \$1/delay/max/label A:1000ms 2 7
+0 8 -228856 -66577 0;
+#X obj 105 134 nbx 9 14 -1e+37 1e+37 0 0 \$1/delay \$1/delay delay
+0 -8 0 10 -262144 -1 -1 1 256;
+#X obj 225 172 s \$1/delay/max/label;
+#X obj 224 33 r \$1/delay/max;
+#X obj 225 117 pack f s;
+#X msg 225 143 label \$2:\$1ms;
+#X obj 160 117 nbx 4 12 -1e+37 1e+37 0 0 \$1/delay/fade \$1/delay/fade
+fade -22 7 0 8 -262144 -1 -1 5 256;
+#X text 121 5 wg/wave/ctl <name> <label>;
+#X obj 341 36 wg/init/bang;
+#X obj 340 60 acre/arg_default \$1 \$2;
+#X obj 280 64 symbol;
+#X obj 280 86 t b s;
+#X text 116 203 (c) GPL \, acre winfried ritsch;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 11 0 4 0;
+#X connect 11 1 4 1;
+#X coords 0 -1 1 1 100 50 2 100 100;

@@ -1,0 +1,5 @@
+#N canvas 1047 263 405 122 10;
+#X obj 30 44 ds/register_map \$1 \$2/note;
+#X obj 30 65 wg/damp/simple_ds \$1 \$2/damp;
+#X text 27 15 wg/string/simple_ds <storage domain> <id>;
+#X text 26 88 (c) GPL \, acre winfried ritsch;

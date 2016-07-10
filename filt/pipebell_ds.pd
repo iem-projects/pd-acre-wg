@@ -1,0 +1,4 @@
+#N canvas 1059 566 411 122 10;
+#X obj 70 43 ds/register_map \$1 \$2/freq;
+#X text 67 77 (c) GPL \, acre winfried ritsch;
+#X text 71 16 wg/filt/pipebell_ds <domain> <id>;

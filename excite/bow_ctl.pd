@@ -1,0 +1,26 @@
+#N canvas 863 129 450 300 10;
+#X obj 101 101 cnv 15 98 98 empty empty bow_\$1 2 7 0 8 -262130 -66577
+0;
+#X obj 102 151 nbx 3 14 -1e+37 1e+37 0 0 \$1/vol \$1/vol vol 0 -8 0
+10 -262144 -1 -1 92 256;
+#X obj 154 102 tgl 15 0 empty empty rep. 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 212 105 metro 1000;
+#X obj 212 126 s \$1/play;
+#X text 103 216 (c) GPL \, acre winfried ritsch;
+#X obj 102 181 nbx 3 14 -1e+37 1e+37 0 0 \$1/treble \$1/treble treble
+0 -8 0 10 -262144 -1 -1 38 256;
+#X obj 154 137 nbx 3 14 -1e+37 1e+37 0 0 \$1/dur \$1/dur dur -18 8
+0 10 -262144 -1 -1 300 256;
+#X obj 103 113 tgl 15 0 \$1/play \$1/play play 17 7 0 10 -262144 -1
+-1 0 1;
+#X text 114 56 wg/excite/bow_ctl <id>;
+#X obj 155 120 bng 15 250 50 0 \$1/play empty play 17 7 0 10 -262144
+-1 -1;
+#X obj 145 160 nbx 5 12 -1e+37 1e+37 0 0 \$1/f/max \$1/f/max fmax 0
+-4 0 10 -262144 -1 -1 0 256;
+#X obj 145 184 nbx 5 12 -1e+37 1e+37 0 0 \$1/f/min \$1/f/min fmin 0
+-4 0 10 -262144 -1 -1 0 256;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X coords 0 -1 1 1 100 100 2 100 100;

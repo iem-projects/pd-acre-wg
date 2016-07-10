@@ -1,0 +1,5 @@
+#N canvas 100 74 450 300 10;
+#X obj 112 46 cnv 15 300 30 empty empty inactive_\$1 20 12 0 14 -233017
+-66577 0;
+#X text 67 20 commented out...;
+#X text 68 100 (c) GPL \, acre winfried ritsch;

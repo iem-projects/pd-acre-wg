@@ -1,0 +1,13 @@
+#N canvas 949 463 329 226 10;
+#X obj 101 101 cnv 15 98 23 empty empty \$1 1 6 0 8 -204800 -66577
+0;
+#X obj 101 114 nbx 3 10 0 1e+37 0 0 \$1/Z/1 \$1/Z/1 empty 18 -6 0 8
+-262144 -1 -1 1 256;
+#X obj 131 114 nbx 3 10 0 1e+37 0 0 \$1/Z/2 \$1/Z/2 empty 9 -6 0 8
+-262144 -1 -1 1 256;
+#X obj 161 114 nbx 4 10 0 1e+37 0 0 \$1/Z/3 \$1/Z/3 empty 0 -6 0 8
+-262144 -1 -1 1000 256;
+#X text 99 150 (c) GPL \, acre winfried ritsch;
+#X text 104 61 wg/port/3_ctl <id>;
+#X text 154 98 split3;
+#X coords 0 -1 1 1 100 25 2 100 100;

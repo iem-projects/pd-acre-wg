@@ -1,0 +1,20 @@
+#N canvas 586 330 524 228 10;
+#X obj 60 99 inlet~;
+#X obj 60 121 lop~ 3000;
+#X obj 60 143 outlet~;
+#X text 141 123 simply a lowpass depending on diameter;
+#X obj 232 75 f \$2;
+#X obj 232 97 sel 0;
+#X obj 232 54 loadbang;
+#X text 67 30 a pipebell simplyfied is a lopass filter;
+#X obj 122 55 r \$1/freq;
+#X text 163 148 Note normally it is alo reflector with frequency depend
+reflection and forwarding;
+#X text 98 7 wg/filt/pipebell~ <id> [frequency];
+#X text 59 175 (c) GPL \, acre winfried ritsch;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 4 0 5 0;
+#X connect 5 1 1 1;
+#X connect 6 0 4 0;
+#X connect 8 0 1 1;

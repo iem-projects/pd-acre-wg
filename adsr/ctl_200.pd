@@ -1,0 +1,19 @@
+#N canvas 639 217 450 300 10;
+#X obj 101 101 cnv 15 198 23 empty empty empty 1 6 0 8 -228856 -66577
+0;
+#X obj 108 109 nbx 3 14 0 1e+37 0 0 \$1/vel \$1/vel vel 2 -4 0 10 -262144
+-1 -1 0 256;
+#X obj 144 111 nbx 4 12 18 1e+37 0 0 \$1/attack \$1/attack attack 2
+-4 0 8 -262144 -1 -1 18 256;
+#X obj 181 111 nbx 4 12 18 1e+37 0 0 \$1/decay \$1/decay decay 2 -4
+0 8 -262144 -1 -1 18 256;
+#X obj 262 111 nbx 4 12 18 1e+37 0 0 \$1/release \$1/release release
+2 -4 0 8 -262144 -1 -1 18 256;
+#X obj 218 111 nbx 5 12 18 1e+37 0 0 \$1/dur \$1/dur dur 2 -4 0 8 -262144
+-1 -1 18 256;
+#X obj 100 114 bng 10 250 50 0 \$1/trigger \$1/trigger t 3 5 0 10 -262144
+-1 -1;
+#X text 117 41 gui for 200px width;
+#X text 96 66 wg/adsr/ctl_200 <id>;
+#X text 97 136 (c) GPL winfried ritsch;
+#X coords 0 -1 1 1 200 25 2 100 100;

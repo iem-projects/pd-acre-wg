@@ -1,0 +1,8 @@
+#N canvas 378 373 450 300 10;
+#X obj 10 186 wg/damp/simple_ds \$1 \$2;
+#X obj 10 81 ds/register_map \$1 \$2/frequency;
+#X obj 10 100 ds/register_map \$1 \$2/symmetry;
+#X obj 10 119 ds/register_map \$1 \$2/frandom;
+#X obj 10 138 ds/register_map \$1 \$2/format;
+#X obj 10 157 ds/register_map \$1 \$2/diag;
+#X obj 10 211 wg/mic/mix_ds \$1 \$2/mic;

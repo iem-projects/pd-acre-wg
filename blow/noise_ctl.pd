@@ -1,0 +1,13 @@
+#N canvas 1089 555 329 226 10;
+#X obj 101 101 cnv 15 98 23 empty empty empty 2 8 0 8 -262130 -66577
+0;
+#X obj 101 113 nbx 3 12 0 1e+37 0 0 \$1/noise/vol \$1/noise/vol noise
+0 -6 0 10 -262144 -1 -1 99 256;
+#X obj 136 113 nbx 4 12 0 1e+37 0 0 \$1/noise/bp/freq \$1/noise/bp/freq
+freq 0 -6 0 10 -262144 -1 -1 439 256;
+#X obj 173 113 nbx 2 12 0 1e+37 0 0 \$1/noise/bp/q \$1/noise/bp/q Q
+0 -6 0 10 -262144 -1 -1 0 256;
+#X text 8 136 (c) GPL algorythmics \, acre \, winfried ritsch;
+#X text 18 48 Note:label not shown \, since to small;
+#X text 21 17 wg/blow/noise_ctl <id> [label];
+#X coords 0 -1 1 1 100 25 2 100 100;

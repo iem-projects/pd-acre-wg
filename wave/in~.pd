@@ -1,0 +1,18 @@
+#N canvas 751 419 455 187 10;
+#X obj 39 104 delwrite~ \$1/forward \$2;
+#X obj 216 105 delwrite~ \$1/backward \$2;
+#X text 45 135 NOTE: output order reverse to wavein;
+#X obj 319 58 f \$2;
+#X obj 319 78 s \$1/delay/max;
+#X text 351 59 read only;
+#X obj 319 37 wg/init/bang;
+#X obj 35 157 outlet~;
+#X text 94 154 orderforcing;
+#X obj 40 67 inlet~;
+#X obj 214 72 inlet~;
+#X text 47 17 wg/wave/in~ <arg1: name> <arg2: maxdelay>;
+#X text 117 172 (c) GPL \, acre winfried ritsch;
+#X connect 3 0 4 0;
+#X connect 6 0 3 0;
+#X connect 9 0 0 0;
+#X connect 10 0 1 0;

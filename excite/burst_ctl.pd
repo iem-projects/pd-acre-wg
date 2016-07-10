@@ -1,0 +1,20 @@
+#N canvas 442 172 450 300 10;
+#X obj 101 101 cnv 15 98 98 empty empty burst_\$1 2 7 0 8 -262130 -66577
+0;
+#X obj 106 181 nbx 3 14 -1e+37 1e+37 0 0 \$1/vol \$1/vol vol 0 -8 0
+10 -262144 -1 -1 94 256;
+#X obj 158 157 tgl 15 0 empty empty rep. 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 225 164 metro 1000;
+#X obj 154 120 bng 15 250 50 0 \$1/play \$1/play play 17 7 0 10 -262144
+-1 -1;
+#X obj 225 185 s \$1/play;
+#X text 103 209 (c) GPL \, acre winfried ritsch;
+#X obj 107 153 nbx 3 14 -1e+37 1e+37 0 0 \$1/treble \$1/treble treble
+0 -8 0 10 -262144 -1 -1 43 256;
+#X obj 107 125 nbx 3 14 -1e+37 1e+37 0 0 \$1/dur \$1/dur dur 0 -8 0
+10 -262144 -1 -1 5 256;
+#X text 114 56 wg/excite/burst_ctl <id>;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X coords 0 -1 1 1 100 100 2 100 100;
