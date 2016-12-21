@@ -1,27 +1,27 @@
-#N canvas 1124 553 462 310 10;
+#N canvas 1125 557 462 310 10;
 #X declare -path data;
 #X declare -lib iemlib1;
 #X declare -lib iemlib2;
 #X declare -lib zexy;
 #X declare -stdpath iemlib;
 #X declare -stdpath acre;
-#X declare -path ..;
 #X declare -path abs;
-#X declare -path ../libs/acre;
-#N canvas 809 458 450 201 settings 0;
+#X declare -path ../acre;
+#X declare -path .. -path ../acre;
+#N canvas 810 462 450 201 settings 1;
 #X obj 37 89 declare -path data;
-#X obj 237 41 declare -lib iemlib1;
-#X obj 236 63 declare -lib iemlib2;
-#X obj 236 84 declare -lib zexy;
-#X obj 236 110 declare -stdpath iemlib;
+#X obj 235 71 declare -lib iemlib1;
+#X obj 234 93 declare -lib iemlib2;
+#X obj 234 114 declare -lib zexy;
+#X obj 234 140 declare -stdpath iemlib;
 #X text 81 11 path and libs needed for this project;
 #X text 37 135 if acre is in std path;
 #X obj 38 155 declare -stdpath acre;
-#X obj 37 43 declare -path ..;
 #X obj 37 67 declare -path abs;
-#X obj 35 112 declare -path ../libs/acre;
+#X obj 35 112 declare -path ../acre;
+#X obj 37 43 declare -path .. -path ../acre;
 #X restore 22 26 pd settings;
-#N canvas 579 83 1017 408 GUI 1;
+#N canvas 580 87 1017 408 GUI 1;
 #X obj 209 118 mxr/mo/ctl;
 #X obj 9 118 mxr/master/stereo_ctl;
 #X text 543 42 Clarinet;
@@ -84,7 +84,7 @@ limit-pulse 17 7 0 10 -262144 -1 -1;
 #X text 65 72 overtones;
 #X obj 58 205 wg/string/overtone_ctl O;
 #X obj 59 423 hsl 512 15 0 1 0 0 O/pos O/pos overtone:position_on_string
--2 -8 0 10 -262144 -1 -1 18213 1;
+-2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 60 98 wg/excite/bow_ctl O/bow;
 #X text 78 12 Experiments are some tries to realize some theory found
 in various papers but with not really nicely results \, but sometimes
