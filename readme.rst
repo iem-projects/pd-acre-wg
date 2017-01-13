@@ -11,8 +11,8 @@ Intuitive simple waveguides synthesis with Pd
 :git master: https://git.iem.at/pd/acre-wg
 
 Target of this Puredata abstractions library is to provide an intuitive simple set of objects to patch physical models of real or fantasy sounding objects.
-Many of them are simplified in favor for more intuitive handling of waveguide elemtents and insttruments and do not always follow the strict waveguide theory.
-The theory of most of the algorithms are based on the wonderful online documents about waveguides from Julian O. Smith III [JOS] at CCRMA Standford University.
+Many of them are simplified in favor for more intuitive handling of waveguide elements and instruments and do not always strictly follow the waveguide theory.
+The theory of most of the algorithms are based on the wonderful online documents about waveguide synthesis from Julian O. Smith III [JOS] at CCRMA Standford University.
 
 .. [JOS] see https://ccrma.stanford.edu/~jos/wg.html, Center for Computer Research in Music and Acoustics (CCRMA),   Stanford University
 
@@ -20,7 +20,27 @@ Some instruments are implemented as examples and provided to serve as a start fo
 The 'acre' systematic with directories as prefixes is used to organize them. (see general acre documentation in acre base modules 'docu/').
 
 Within physical modeling, the more sophisticated the models are, the more expressive parameters are needed to handle them and mostly the more difficult is to play them.
-Therefore in some of the instruments, the parameters are simplified and combined, to allow an easier intuitive playing and also values are mapped to a more intuitive range.
+Therefore in some of the instruments, the parameters are simplified and combined to allow an easier intuitive playing and also values are mapped to a more intuitive wield ranges.
+
+
+Installation
+------------
+
+Needed libraries: acre_ base module, zexy, iemlib1, iemlib2, iemmatrix
+ libraries not installed in the system, can be copied to "libs/"
+ (thus if checkout fresh it should be empty)
+
+.. _acre: https://git.iem.at/pd/acre
+
+acre-base module ``acre`` starting with version 2.0 should be installed in the Pd-search path.
+
+Install this library in your search path naming this directory ``wg``. 
+Do not set search path inside this library since objects are referred as `wg/<object>` in the patches and should not conflict
+with other namespaces.
+
+A proposed way to install is, to name the library directory ``wg`` and place it or link it  in the directory of the acre base libraries.
+
+To install it: clone it via git, download it from http://puredata.info/ or download/install it via `deken`.
 
 
 Objects
@@ -281,21 +301,5 @@ the structure are waveguides at sides and in diogonal, with simplified controls:
  - Damping is constant on junction outputs with low-pass.
  
  
-Installation
-------------
-
-Needed libraries: acre_ base module, zexy, iemlib1, iemlib2, iemmatrix
- libraries not installed in the system, can be copied to "libs/"
- (thus if checkout fresh it should be empty)
-
-.. _acre: https://git.iem.at/pd/acre
-
-acre-base module ``acre`` starting with version 2.0 should be installed in the Pd-search path.
-
-Install this library in your search path naming this directory ``wg``. 
-Do not set search path inside this library since objects are referred as `wg/<object>` in the patches and should not conflict
-with other namespaces.
-
-To install it: clone it via git, download it from puredata.info or download/install it via `deken`.
 
 (c) GPL-3 by winfried ritsch see acre
