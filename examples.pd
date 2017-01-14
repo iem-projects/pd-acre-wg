@@ -1,4 +1,4 @@
-#N canvas 1125 557 462 310 10;
+#N canvas 900 424 462 310 10;
 #X declare -path data;
 #X declare -lib iemlib1;
 #X declare -lib iemlib2;
@@ -8,7 +8,7 @@
 #X declare -path abs;
 #X declare -path ../acre;
 #X declare -path .. -path ../acre;
-#N canvas 810 462 450 201 settings 1;
+#N canvas 811 466 450 201 settings 1;
 #X obj 37 89 declare -path data;
 #X obj 235 71 declare -lib iemlib1;
 #X obj 234 93 declare -lib iemlib2;
@@ -21,7 +21,7 @@
 #X obj 35 112 declare -path ../acre;
 #X obj 37 43 declare -path .. -path ../acre;
 #X restore 22 26 pd settings;
-#N canvas 580 87 1017 408 GUI 1;
+#N canvas 345 91 1017 408 GUI 1;
 #X obj 209 118 mxr/mo/ctl;
 #X obj 9 118 mxr/master/stereo_ctl;
 #X text 543 42 Clarinet;
@@ -36,7 +36,7 @@ breath 17 7 0 8 -262144 -1 -1;
 play 17 7 0 8 -262144 -1 -1;
 #X text 8 341 (c) GPL \, acre winfried ritsch;
 #X obj 546 111 hradio 15 1 0 4 /clarinet/A/song /clarinet/A/song Song
-0 -8 0 10 -262144 -1 -1 1;
+0 -8 0 10 -262144 -1 -1 0;
 #X obj 9 67 wg/init/ctl;
 #X text 27 38 Open Masterfader and play ...;
 #X obj 546 188 wg/clarinet/ctl /clarinet/A;
@@ -80,15 +80,16 @@ limit-pulse 17 7 0 10 -262144 -1 -1;
 #X text 438 61 or string;
 #X text 420 44 slap on an pipe;
 #X obj 887 83 wg/excite/burst_ctl X/burst;
-#N canvas 13 101 613 479 experiments 0;
+#N canvas 14 105 613 479 experiments 0;
 #X text 65 72 overtones;
 #X obj 58 205 wg/string/overtone_ctl O;
 #X obj 59 423 hsl 512 15 0 1 0 0 O/pos O/pos overtone:position_on_string
--2 -8 0 10 -262144 -1 -1 0 1;
+-2 -8 0 10 -262144 -1 -1 26500 1;
 #X obj 60 98 wg/excite/bow_ctl O/bow;
-#X text 78 12 Experiments are some tries to realize some theory found
-in various papers but with not really nicely results \, but sometimes
-really experimental and unpredictable;
+#X text 78 12 Experiments are some attempt to implement some theory
+of waveguides found in various papers \, but with not really convincing
+results \, maybe nicely sounding \, but sometimes really "experimental"
+and somehow unpredictable.;
 #X restore 80 78 pd experiments;
 #X obj 773 118 wg/adsr/ctl B/adsr B;
 #X obj 773 190 wg/string/bowed_ctl B;
