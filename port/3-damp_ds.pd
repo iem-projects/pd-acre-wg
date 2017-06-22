@@ -1,0 +1,5 @@
+#N canvas 1532 789 301 142 10;
+#X text 13 79 (c) GPL \, acre winfried ritsch;
+#X text 10 5 wg/damp/simple_ds <domain> <id>;
+#X obj 16 57 wg/port/3_ds \$1 \$2;
+#X obj 13 30 wg/damp/simple_ds \$1/damp \$2;

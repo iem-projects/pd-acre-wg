@@ -1,0 +1,6 @@
+#N canvas 557 583 337 138 10;
+#X text 9 107 (c) GPL \, acre winfried ritsch;
+#X obj 11 34 ds/register_map \$1 \$2/Z/1;
+#X obj 13 56 ds/register_map \$1 \$2/Z/2;
+#X obj 15 80 ds/register_map \$1 \$2/Z/3;
+#X text 10 5 wg/port/split3_ds <domain> <id>;

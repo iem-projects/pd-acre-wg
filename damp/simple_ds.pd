@@ -1,5 +1,5 @@
-#N canvas 714 444 301 142 10;
-#X obj 10 29 wg/damp/decay_ds \$1 \$2;
-#X obj 12 55 wg/damp/filt_ds \$1 \$2;
+#N canvas 713 470 301 142 10;
 #X text 13 79 (c) GPL \, acre winfried ritsch;
 #X text 10 5 wg/damp/simple_ds <domain> <id>;
+#X obj 10 29 wg/damp/decay_ds \$1 \$2;
+#X obj 12 55 wg/damp/filt_ds \$1 \$2;
