@@ -6,7 +6,7 @@ Intuitive simple waveguides synthesis with Pd
 
 :Author: Winfried Ritsch
 :Contact: ritsch@iem.at
-:Revision: 1.01 Waveguide  for acre lib 
+:Revision: 1.02a Waveguide  for acre lib 
 :Copyright: GPL by winfried ritsch IEM, 2009+
 :git master: https://git.iem.at/pd/acre-wg
 
