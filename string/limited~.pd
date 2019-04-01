@@ -72,7 +72,7 @@
 #X text 414 159 f;
 #X text 449 245 excite;
 #X obj 9 221 wg/damp/simple~ \$1/damp;
-#X obj 356 223 wg/damp/simple~ \$1/damp;
+#X obj 405 216 wg/damp/simple~ \$1/damp;
 #X obj 30 377 wg/mic/mix~ \$1/mic \$1/A 5 0.2;
 #X text 15 0 wg/string/limited~ <id> <maxlength ms>;
 #X obj 180 221 wg/shape/limit~ \$1/shape;
@@ -80,6 +80,8 @@
 #X obj 10 145 wg/wave/out~ \$1/A 2;
 #X obj 10 291 wg/wave/in~ \$1/A \$2;
 #X obj 291 297 wg/wave/in~ \$1/B \$2;
+#X obj 9 242 *~ -1;
+#X obj 405 245 *~ -1;
 #X connect 1 0 40 0;
 #X connect 1 0 40 1;
 #X connect 10 0 36 2;
@@ -88,8 +90,8 @@
 #X connect 14 0 12 0;
 #X connect 15 0 21 0;
 #X connect 22 0 15 0;
-#X connect 32 0 39 0;
-#X connect 33 0 40 1;
+#X connect 32 0 41 0;
+#X connect 33 0 42 0;
 #X connect 34 0 0 0;
 #X connect 36 0 40 0;
 #X connect 36 1 39 1;
@@ -97,3 +99,5 @@
 #X connect 37 1 33 0;
 #X connect 38 0 32 0;
 #X connect 38 1 36 0;
+#X connect 41 0 39 0;
+#X connect 42 0 40 1;

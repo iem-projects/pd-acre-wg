@@ -70,9 +70,9 @@
 #X text 226 139 simplified reflections with 2 identical damper;
 #X text 71 301 excite signal;
 #X obj 347 161 wg/wave/out~ \$1/B 3;
-#X obj 24 267 wg/wave/in~ \$1/A \$2;
+#X obj 6 275 wg/wave/in~ \$1/A \$2;
 #X obj 348 269 wg/wave/in~ \$1/B \$2;
-#X obj 29 151 wg/wave/out~ \$1/A 2;
+#X obj 3 150 wg/wave/out~ \$1/A 2;
 #X text 29 352 Feedback Loop: - Damp - WG A - reflect - WG B -;
 #X obj 175 215 wg/port/split3~ \$1/split 1 1 2;
 #X text 197 312 Does not work nicely \, maybe the simplification is
@@ -88,6 +88,8 @@ to much \, finger damping should be respected ?;
 #X text 105 119 waveguide split siplified finger damp excursion of
 string;
 #X obj 297 75 switch~ 4;
+#X obj 5 238 *~ -1;
+#X obj 475 234 *~ -1;
 #X connect 0 0 6 0;
 #X connect 2 0 37 0;
 #X connect 4 0 5 0;
@@ -95,8 +97,8 @@ string;
 #X connect 6 0 37 0;
 #X connect 9 0 23 0;
 #X connect 9 0 23 1;
-#X connect 12 0 23 1;
-#X connect 13 0 22 0;
+#X connect 12 0 39 0;
+#X connect 13 0 38 0;
 #X connect 14 0 8 0;
 #X connect 21 0 26 1;
 #X connect 21 1 12 0;
@@ -104,3 +106,5 @@ string;
 #X connect 24 1 26 0;
 #X connect 26 0 22 1;
 #X connect 26 1 23 0;
+#X connect 38 0 22 0;
+#X connect 39 0 23 1;
