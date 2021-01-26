@@ -10,7 +10,7 @@ Intuitive simple waveguides synthesis with Pd
 :Copyright: GPL by winfried ritsch IEM, 2009+
 :git master: https://git.iem.at/pd/acre-wg
 
-Target of this Puredata abstractions library is to provide an intuitive simple set of objects to patch physical models of real or fantasy sounding objects.
+Target of this Pure Data abstractions library is to provide an intuitive simple set of objects to patch physical models of real or fantasy sounding objects.
 Many of them are simplified in favor for more intuitive handling of waveguide elements and instruments and do not always strictly follow the waveguide theory.
 The theory of most of the algorithms are based on the wonderful online documents about waveguide synthesis from Julian O. Smith III [JOS] at CCRMA Standford University.
 
