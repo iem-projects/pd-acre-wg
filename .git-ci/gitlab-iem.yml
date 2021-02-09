@@ -1,0 +1,6 @@
+---
+variables:
+  IEM_CI_PROJECT_INSTALLDIR: acre/wg
+
+include:
+  - https://git.iem.at/pd/iem-ci/raw/master/no-build/gitlab-iem.yml
