@@ -1,0 +1,6 @@
+#pd files should be handled like binaries (binary is a macro for -text -diff)
+#*.pd binary
+
+# exclude repository configuration from 'git archive'
+.git*      	export-ignore
+.travis.yml	export-ignore
