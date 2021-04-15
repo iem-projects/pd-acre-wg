@@ -302,4 +302,6 @@ the structure are waveguides at sides and in diogonal, with simplified controls:
  
  
 
+ 
+
 (c) GPL-3 by winfried ritsch see acre
